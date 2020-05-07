@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './components/TodoForm'
 import List from './components/TodoList'
-import Todo from './components/Todo'
+
 
 // //<App />` will hold all the data needed for this project. It will also be the container for your Todo Components.
 // - All of your application data will be stored here on `<App />`.
