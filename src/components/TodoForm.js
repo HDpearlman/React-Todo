@@ -17,7 +17,7 @@ class Form extends React.Component{
         return <div>
             <form onSubmit={this.props.submitHandler}>
                 <label>
-                    New list item: <input 
+                    New list item: <input placeholder='write a list item...'
                     onChange={this.props.changeHandler}
                     type='text'></input>
                 </label>

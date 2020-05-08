@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './components/TodoForm'
 import List from './components/TodoList'
-
+import './components/Todo.css'
 
 // //<App />` will hold all the data needed for this project. It will also be the container for your Todo Components.
 // - All of your application data will be stored here on `<App />`.
@@ -33,16 +33,18 @@ class App extends React.Component {
 
     submitHandler = e =>{
       e.preventDefault();
-
+      
       this.setState({
         todoList:[...this.state.todoList, {
           item:this.state.formData,
           finished:false,
           id:Date.now()
-        } ]}
-         
-      )
-      console.log(this.state.todoList)
+        } ]
+      })
+      this.setState({
+        formData:''
+      })
+     
     }
     
     clearCompleted = () =>{
